@@ -130,6 +130,7 @@ jobs:
           ref: main
           path: charts
           token: ${{ secrets.ICON_CHARTS_PAT }}
+          fetch-depth: 0
 
       - name: Git pull the latest
         run: |
